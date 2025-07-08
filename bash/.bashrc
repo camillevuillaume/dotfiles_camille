@@ -13,3 +13,5 @@ eval "$(fzf --bash)"
 
 alias pacfzf="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"
 
+eval "$(starship init bash)"
+
