@@ -1,0 +1,107 @@
+ * {
+    font-size: 15px;
+    font-family: "FiraCode Nerd Font";
+}
+window#waybar {
+    all: unset;
+}
+.modules-left {
+    margin: 10px 0px 5px 10px;
+}
+.modules-center {
+    margin: 10px 0px 5px 0px;
+}
+.modules-right {
+    margin: 10px 10px 5px 0px;
+}
+.modules-left,
+.modules-center,
+.modules-right {
+    padding: 7px;
+    border-radius: 10px;
+    background: rgba(33, 33, 33, 0.7);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+}
+tooltip {
+    background-color: rgba(33, 33, 33, 0.9);
+}
+tooltip label {
+    color: #a9b1d6;
+}
+#clock:hover,
+#custom-notification:hover,
+#network:hover,
+#battery:hover,
+#pulseaudio:hover,
+#bluetooth:hover,
+#battery:hover,
+#custom-powerprofile:hover,
+#language:hover,
+#custom-jellyfin:hover,
+#custom-bottom:hover {
+    transition: all 0.3s ease;
+    opacity: 0.5;
+}
+#custom-notification,
+#custom-powerprofile,
+#clock,
+#workspace,
+#network,
+#bluetooth,
+#pulseaudio,
+#battery,
+#language,
+#custom-jellyfin,
+#custom-bottom {
+    padding: 0px 5px;
+    color: #a9b1d6;
+}
+#workspaces button {
+    all: unset;
+    padding: 0px 5px;
+    color: #a9b1d6;
+}
+#workspaces button:hover,
+#workspaces button.empty:hover {
+    color: #7aa2f7;
+    border: none;
+    transition: all 0.3s ease;
+}
+#workspaces button.active,
+#workspaces button.empty.active {
+    color: #f7768e;
+    border: none;
+}
+#workspaces button.empty {
+    color: #7aa2f7;
+    border: none;
+}
+#battery.charging.good,
+#battery.plugged.good,
+#battery.good:not(.charging) {
+    color: rgb(0, 255, 183);
+}
+#battery.charging.ok,
+#battery.plugged.ok,
+#battery.ok:not(.charging) {
+    color: rgb(255, 215, 0);
+}
+#battery.charging.warning,
+#battery.plugged.warning,
+#battery.warning:not(.charging) {
+    color: rgb(255, 69, 0);
+}
+#battery.charging.critical,
+#battery.plugged.critical,
+#network.disconnected,
+#battery.critical:not(.charging) {
+    color: rgb(215, 0, 64);
+}
+
+
+
+/*
+Changed the colors of the original source file
+Simplified many IDs into one bracket since there was no need to repeat the same code lines
+Lastly modified on 20/5/2025 by Dimitrios Psaroudakis
+*/   
