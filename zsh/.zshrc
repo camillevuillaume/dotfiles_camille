@@ -4,7 +4,9 @@ export SUDO_EDITOR="$EDITOR"
 autoload -Uz compinit
 compinit
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
 zstyle ':completion:*' menu select
 zstyle ':completion::complete:*' gain-privileges 1
 
