@@ -4,8 +4,8 @@
 add_newline = true
 
 # Change the default prompt format
-format = """\
-[╭╴](238)$all\
+format = """
+[╭╴](238)$username$directory$git_branch$git_status$time
 [╰─](238)$character"""
 
 # Don't display container module
@@ -19,30 +19,54 @@ error_symbol = "[ ](bold red)"
 
 # Shows the username
 [username]
-style_user = "white bold"
-style_root = "black bold"
-format = "[$user]($style) "
+style_user = "fg:green bold bg:234"
+style_root = "fg:red bold bg 234"
+format = """
+[](234)\
+[$user]($style)\
+[](234)\
+"""
 disabled = false
 show_always = true
 
+[sudo]
+format = "[$symbol]($style)"
+style = "bold italic bright-purple"
+symbol = "⋈┈"
+disabled = false
+
 [directory]
+style = "fg:blue bold bg:234"
 truncation_length = 3
 truncation_symbol = "…/"
 home_symbol = ""
 read_only_style = "197"
 read_only = "  "
-format = "at [$path]($style)[$read_only]($read_only_style) "
+format = """
+ at \ 
+[](234)\
+[$path]($style)[$read_only]($read_only_style)\
+[](234) \
+"""
 
 [git_branch]
 symbol = "󰊢 "
-format = "on [$symbol$branch]($style) "
+style = "fg:white bg:18"
+format = """
+on \
+[](18)\
+[$symbol$branch]($style)\
+"""
 #truncation_length = 4
 #truncation_symbol = "…/"
-style = "bold green"
 
 [git_status]
-format = '[\($all_status$ahead_behind\)]($style) '
-style = "bold green"
+format = """
+[](fg:18 bg:33)\
+[ $all_status$ahead_behind]($style)\
+[ ](fg:33)\
+"""
+style = "fg:white bg:33"
 conflicted = "🏳"
 up_to_date = " "
 untracked = " "
@@ -84,6 +108,21 @@ format = "via [ ]($style) "
 [cpp]
 format = "via [ ]($style) "
 
+[lua]
+format = "via [ ]($style) "
+
+[time]
+disabled = false
+time_format = "%R"
+style = "fg:white bg:234"
+format = """
+[](234)\
+[ $time ]($style)\
+[](234) \
+"""
+
+[cmd_duration]
+disabled = true
 
 [directory.substitutions]
 "Documents" = "󰈙 "
@@ -91,7 +130,4 @@ format = "via [ ]($style) "
 "Music" = " "
 "Pictures" = " "
 
-
-[lua]
-format = "via [ ]($style) "
 
