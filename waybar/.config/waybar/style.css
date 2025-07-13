@@ -1,6 +1,7 @@
  * {
     font-size: 15px;
-    font-family: "FiraCode Nerd Font";
+    /*font-family: "FiraCode Nerd Font";*/
+    font-family: "CaskaydiaCoveNF-Regular";
 }
 window#waybar {
     all: unset;
