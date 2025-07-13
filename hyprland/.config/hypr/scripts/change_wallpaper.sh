@@ -1,6 +1,9 @@
 #!/bin/bash
 
-sleep 1
+# Quit if hyprpaper is not running.
+if ! pgrep -x hyprpaper > /dev/null; then
+    exit 0
+fi
 
 # Define daytime and nighttime image to respective variables
 DAY_WALLPAPER=~/.config/hypr/wallpapers/Fuji-day.jpg
