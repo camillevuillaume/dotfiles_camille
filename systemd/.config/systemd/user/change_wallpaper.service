@@ -1,0 +1,7 @@
+[Unit]
+Description=Change Wallpaper Service
+
+[Service]
+Type=oneshot
+ExecStart=%h/.config/hypr/scripts/change_wallpaper.sh
+

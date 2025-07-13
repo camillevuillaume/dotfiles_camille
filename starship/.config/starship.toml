@@ -75,7 +75,7 @@ diverged = "⇕⇡${ahead_count}⇣${behind_count}"
 behind = "⇣${count}"
 stashed = "󰘓 "
 modified = " "
-staged = '[++($count)'
+staged = '++($count)'
 renamed = "󰑕 "
 deleted = " "
 
