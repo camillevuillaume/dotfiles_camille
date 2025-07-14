@@ -20,15 +20,15 @@ PRESENT_TIME=$(date +%H)
 # and assign day wallpaper to wallpaper variable.
 # Else, if time is between 6 pm and 6 am, 
 # assign night time wallpaper to wallpaper variable.
-if [ $PRESENT_TIME -ge 9 ] && [ $PRESENT_TIME -lt 18 ]; then
+if [ $PRESENT_TIME -ge 9 ] && [ $PRESENT_TIME -lt 16 ]; then
 	WALLPAPER=$DAY_WALLPAPER
-elif [ $PRESENT_TIME -ge 18 ] && [ $PRESENT_TIME -lt 19 ]; then
+elif [ $PRESENT_TIME -ge 16 ] && [ $PRESENT_TIME -lt 17 ]; then
 	WALLPAPER=$SHADE1_WALLPAPER
-elif [ $PRESENT_TIME -ge 19 ] && [ $PRESENT_TIME -lt 20 ]; then
+elif [ $PRESENT_TIME -ge 17 ] && [ $PRESENT_TIME -lt 18 ]; then
   WALLPAPER=$SHADE2_WALLPAPER
-elif [ $PRESENT_TIME -ge 20 ] && [ $PRESENT_TIME -lt 21 ]; then
-  WALLPAPER=$SHADE3_WALLPAPER
-elif [ $PRESENT_TIME -ge 21 ] && [ $PRESENT_TIME -lt 22 ]; then
+elif [ $PRESENT_TIME -ge 18 ] && [ $PRESENT_TIME -lt 19 ]; then
+  WALLPAPER=$SHADE3_WALLPAER
+elif [ $PRESENT_TIME -ge 19 ] && [ $PRESENT_TIME -lt 20 ]; then
   WALLPAPER=$SHADE4_WALLPAPER
 elif [ $PRESENT_TIME -ge 5 ] && [ $PRESENT_TIME -lt 6 ]; then
 	WALLPAPER=$SHADE4_WALLPAPER
