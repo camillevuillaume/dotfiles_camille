@@ -1,5 +1,9 @@
 export EDITOR="nvim"
 export SUDO_EDITOR="$EDITOR"
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+
 
 autoload -Uz compinit
 compinit
