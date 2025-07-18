@@ -54,7 +54,7 @@
     }
   },
   "custom/pacman": {
-    "format": "<span size='13000' foreground='#7aa2f7'>{icon}</span>{0}",
+    "format": "<span size='13000' foreground='#7aa2f7'>{icon} </span>{0}",
     "return-type": "json",
     "format-icons": {
       "pending-updates": " ",
