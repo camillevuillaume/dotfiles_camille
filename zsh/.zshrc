@@ -17,5 +17,7 @@ zstyle ':completion::complete:*' gain-privileges 1
 eval "$(starship init zsh)"
 
 alias pacfzf="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"
+alias yayfzf="yay -Slq | fzf --multi --preview 'yay -Si {1}' | xargs -ro sudo yay -S"
+#alias yayfzf="yay -Slq | fzf -q "$1" --preview 'yay -Si {1}'| xargs -ro yay -S"
 alias grep='grep --color=auto'
 alias ls="eza --long --git --icons --hyperlink"
