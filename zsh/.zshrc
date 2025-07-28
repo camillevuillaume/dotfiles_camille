@@ -21,3 +21,5 @@ alias yayfzf="yay -Slq | fzf --multi --preview 'yay -Si {1}' | xargs -ro sudo ya
 #alias yayfzf="yay -Slq | fzf -q "$1" --preview 'yay -Si {1}'| xargs -ro yay -S"
 alias grep='grep --color=auto'
 alias ls="eza --long --git --icons --hyperlink"
+
+fastfetch --logo .config/fastfetch/arch.gif --logo-type kitty-direct --logo-animate true --logo-width 30
