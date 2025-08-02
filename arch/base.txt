@@ -1,0 +1,9 @@
+nano
+iwd
+less
+man-db
+man-pages
+grub
+efibootmgr
+dosfstools
+sudo

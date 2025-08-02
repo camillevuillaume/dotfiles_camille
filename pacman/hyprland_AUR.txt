@@ -1,0 +1,3 @@
+waybar-updates
+fastfetch-gif-git
+
