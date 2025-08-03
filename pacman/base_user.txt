@@ -33,4 +33,4 @@ imagemagick
 ueberzugpp
 bluez
 bc
-
+ollama

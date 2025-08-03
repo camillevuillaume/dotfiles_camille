@@ -12,12 +12,12 @@ SHADE4_WALLPAPER=~/.config/hypr/wallpapers/Fuji-shade4.jpg
 
 
 # Preload the wallpapers.
-hyprctl hyprpaper preload "$DAY_WALLPAPER"
-hyprctl hyprpaper preload "$NIGHT_WALLPAPER"
-hyprctl hyprpaper preload "$SHADE1_WALLPAPER"
-hyprctl hyprpaper preload "$SHADE2_WALLPAPER"
-hyprctl hyprpaper preload "$SHADE3_WALLPAPER"  
-hyprctl hyprpaper preload "$SHADE4_WALLPAPER"
+#hyprctl hyprpaper preload "$DAY_WALLPAPER"
+#hyprctl hyprpaper preload "$NIGHT_WALLPAPER"
+#hyprctl hyprpaper preload "$SHADE1_WALLPAPER"
+#hyprctl hyprpaper preload "$SHADE2_WALLPAPER"
+#hyprctl hyprpaper preload "$SHADE3_WALLPAPER"  
+#hyprctl hyprpaper preload "$SHADE4_WALLPAPER"
 
 # Calculate the present hour and save it to a variable 
 PRESENT_TIME=$(date +%H)
@@ -49,8 +49,8 @@ else
 fi
 
 # Apply the wallpaper to current display.
-hyprctl hyprpaper wallpaper ,"$WALLPAPER"
-
+hyprctl hyprpaper reload ,"$WALLPAPER"
+hyprctl hyprpaper unload unused
 # Exit with success.
 exit 0
 
