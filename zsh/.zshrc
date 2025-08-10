@@ -22,4 +22,4 @@ alias yayfzf="yay -Slq | fzf --multi --preview 'yay -Si {1}' | xargs -ro sudo ya
 alias grep='grep --color=auto'
 alias ls="eza --long --git --icons --hyperlink"
 
-fastfetch --logo .config/fastfetch/arch.gif --logo-type kitty-direct --logo-animate true --logo-width 30
+fastfetch --logo .config/fastfetch/arch.gif --logo-type kitty-direct --logo-animate true --logo-width 22

@@ -25,7 +25,6 @@ texlive-bin
 texlive-binextra
 impala
 impala
-pulseaudio
 reflector
 fd
 7zip
@@ -34,3 +33,5 @@ ueberzugpp
 bluez
 bc
 ollama
+pipewire-pulse
+fuse3

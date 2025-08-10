@@ -35,4 +35,6 @@ fcitx5-mozc
 fcitx5-configtool
 chafa
 ffmpeg
-fastfetch
+bluez
+bluez-utils
+pipewire-pulse

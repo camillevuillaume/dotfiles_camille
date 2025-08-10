@@ -36,7 +36,7 @@
       "format-icons": {
           "default": ["", "", " "]
       },
-      "on-click": "pavucontrol"
+      "on-click": "hyprctl dispatch exec [float] pavucontrol"
   },
   "hyprland/workspaces": {
 		"format": "{name} : {icon}",
