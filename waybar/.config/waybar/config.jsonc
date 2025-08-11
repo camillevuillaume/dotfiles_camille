@@ -23,11 +23,11 @@
     "tooltip-format": "{time}"
   },
   "network": {
-    "format-wifi": "<span size='13000' foreground='#7aa2f7'>  </span>{essid}",
+    "format-wifi": "<span size='13000' foreground='#7aa2f7'>  </span>",
     "format-ethernet": "<span size='13000' foreground='#7aa2f7'>󰤭  </span> Disconnected",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "<span size='13000' foreground='#7aa2f7'>  </span>Disconnected",
-    "tooltip-format-wifi": "Signal Strenght: {signalStrength}%",
+    "tooltip-format-wifi": "{essid} Signal Strenght: {signalStrength}%",
     "on-click": "kitty --title FloatingKitty impala"
   },
   "pulseaudio": {

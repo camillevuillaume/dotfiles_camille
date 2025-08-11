@@ -38,3 +38,4 @@ fuse3
 brightnessctl
 nmap
 python-pylint
+acpi
