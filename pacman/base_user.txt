@@ -36,3 +36,5 @@ ollama
 pipewire-pulse
 fuse3
 brightnessctl
+nmap
+python-pylint
