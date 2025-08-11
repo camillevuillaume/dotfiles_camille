@@ -43,8 +43,8 @@ else
 fi
 
 # Apply the wallpaper to current display.
-hyprctl hyprpaper wallpaper ,"$WALLPAPER"
-
+hyprctl hyprpaper reload ,"$WALLPAPER"
+hyprctl hyprpaper unload unused
 # Exit with success.
 exit 0
 
