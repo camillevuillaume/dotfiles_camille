@@ -24,7 +24,6 @@ texlive-bibtexextra
 texlive-bin
 texlive-binextra
 impala
-impala
 reflector
 fd
 7zip
@@ -41,5 +40,4 @@ python-pylint
 acpi
 bat
 rpi-imager
-udisks2
 udisks2
