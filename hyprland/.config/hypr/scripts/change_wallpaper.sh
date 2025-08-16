@@ -16,6 +16,8 @@ SHADE4_WALLPAPER=~/.config/hypr/wallpapers/Fuji-shade4.jpg
 # Calculate the present hour and save it to a variable 
 PRESENT_TIME=$(date +%H)
 
+echo "Current time: $PRESENT_TIME"
+
 # In an if loop, check if current time is between 6 am and 6 pm 
 # and assign day wallpaper to wallpaper variable.
 # Else, if time is between 6 pm and 6 am, 
@@ -27,7 +29,7 @@ elif [ $PRESENT_TIME -ge 16 ] && [ $PRESENT_TIME -lt 17 ]; then
 elif [ $PRESENT_TIME -ge 17 ] && [ $PRESENT_TIME -lt 18 ]; then
   WALLPAPER=$SHADE2_WALLPAPER
 elif [ $PRESENT_TIME -ge 18 ] && [ $PRESENT_TIME -lt 19 ]; then
-  WALLPAPER=$SHADE3_WALLPAER
+  WALLPAPER=$SHADE3_WALLPAPER
 elif [ $PRESENT_TIME -ge 19 ] && [ $PRESENT_TIME -lt 20 ]; then
   WALLPAPER=$SHADE4_WALLPAPER
 elif [ $PRESENT_TIME -ge 5 ] && [ $PRESENT_TIME -lt 6 ]; then
@@ -41,6 +43,8 @@ elif [ $PRESENT_TIME -ge 8 ] && [ $PRESENT_TIME -lt 9 ]; then
 else	
 	WALLPAPER=$NIGHT_WALLPAPER
 fi
+
+echo "Applying wallpaper: $WALLPAPER"
 
 # Apply the wallpaper to current display.
 hyprctl hyprpaper reload ,"$WALLPAPER"

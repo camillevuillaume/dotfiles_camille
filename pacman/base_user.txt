@@ -39,3 +39,7 @@ brightnessctl
 nmap
 python-pylint
 acpi
+bat
+rpi-imager
+udisks2
+udisks2

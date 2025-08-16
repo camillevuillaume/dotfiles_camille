@@ -38,3 +38,7 @@ ffmpeg
 bluez
 bluez-utils
 pipewire-pulse
+thunar-volman
+gvfs
+gvfs-google
+gvfs-smb
