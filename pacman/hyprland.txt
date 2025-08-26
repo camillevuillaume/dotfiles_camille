@@ -42,3 +42,5 @@ thunar-volman
 gvfs
 gvfs-google
 gvfs-smb
+iio-sensor-proxy
+
