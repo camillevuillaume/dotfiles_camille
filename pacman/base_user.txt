@@ -41,3 +41,7 @@ acpi
 bat
 rpi-imager
 udisks2
+github-cli
+dvdbackup
+libbluray
+libaacs
