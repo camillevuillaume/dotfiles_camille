@@ -45,3 +45,4 @@ github-cli
 dvdbackup
 libbluray
 libaacs
+meson

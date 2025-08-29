@@ -9,3 +9,6 @@ else
     echo "1" > "$TOGGLE_FILE"
     notify-send "Auto-rotation enabled"
 fi
+
+~/.config/hypr/scripts/rotate_screen.sh
+
