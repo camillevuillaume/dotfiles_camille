@@ -1,6 +1,11 @@
 git
 base-devel
 nvim
+tree-sitter
+tree-sitter-python
+tree-sitter-bash
+tree-sitter-lua
+tree-sitter-c
 stow
 fzf
 openssh
@@ -46,3 +51,13 @@ dvdbackup
 libbluray
 libaacs
 meson
+asciidoctor-pdf
+ripgrep
+python-pytest
+python-pytest-mock
+tailscale
+ncspot
+cava
+bind
+chrony
+rsync
