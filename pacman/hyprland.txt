@@ -45,4 +45,5 @@ gvfs-smb
 iio-sensor-proxy
 niri
 fuzzel
+swww
 
