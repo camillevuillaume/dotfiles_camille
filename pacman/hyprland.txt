@@ -43,4 +43,6 @@ gvfs
 gvfs-google
 gvfs-smb
 iio-sensor-proxy
+niri
+fuzzel
 
