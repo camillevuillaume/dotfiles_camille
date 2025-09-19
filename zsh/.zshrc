@@ -23,7 +23,7 @@ alias grep='grep --color=auto'
 alias ls="eza --long --git --icons --hyperlink"
 alias ssh='TERM="xterm-256color" kitty +kitten ssh'
 
-fastfetch --logo .config/fastfetch/arch.gif --logo-type kitty-direct --logo-animate true --logo-width 22
+fastfetch --logo .config/fastfetch/arch.gif --logo-type kitty-direct --logo-animate true --logo-width 20
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
