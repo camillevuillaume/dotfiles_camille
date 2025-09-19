@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Quit if hyprpaper is not running.
-if ! pgrep -x niri > /dev/null; then
+if pgrep -x niri > /dev/null; then
   if ! pgrep swww-daemon > /dev/null; then
     exit 0
   fi  
