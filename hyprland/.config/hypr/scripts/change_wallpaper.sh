@@ -1,10 +1,15 @@
 #!/bin/bash
 
 # Quit if hyprpaper is not running.
-if ! pgrep -x hyprpaper > /dev/null; then
+if ! pgrep -x niri > /dev/null; then
+  if ! pgrep swww-daemon > /dev/null; then
     exit 0
+  fi  
+else
+  if ! pgrep -x hyprpaper > /dev/null; then
+    exit 0
+  fi
 fi
-
 # Define daytime and nighttime image to respective variables
 DAY_WALLPAPER=~/.config/hypr/wallpapers/Fuji-day.jpg
 NIGHT_WALLPAPER=~/.config/hypr/wallpapers/Fuji-night.jpg
@@ -47,8 +52,15 @@ fi
 echo "Applying wallpaper: $WALLPAPER"
 
 # Apply the wallpaper to current display.
-hyprctl hyprpaper reload ,"$WALLPAPER"
-hyprctl hyprpaper unload unused
+if pgrep -x niri > /dev/null; then
+  swww img "$WALLPAPER" 
+else
+  if ! pgrep -x hyprpaper > /dev/null; then
+    exit 0
+  fi
+  hyprctl hyprpaper reload ,"$WALLPAPER"
+  hyprctl hyprpaper unload unused
+fi
 # Exit with success.
 exit 0
 
