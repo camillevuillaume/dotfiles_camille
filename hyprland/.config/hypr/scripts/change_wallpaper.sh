@@ -27,7 +27,7 @@ elif [ $PRESENT_TIME -ge 16 ] && [ $PRESENT_TIME -lt 17 ]; then
 elif [ $PRESENT_TIME -ge 17 ] && [ $PRESENT_TIME -lt 18 ]; then
   WALLPAPER=$SHADE2_WALLPAPER
 elif [ $PRESENT_TIME -ge 18 ] && [ $PRESENT_TIME -lt 19 ]; then
-  WALLPAPER=$SHADE3_WALLPAER
+  WALLPAPER=$SHADE3_WALLPAPER
 elif [ $PRESENT_TIME -ge 19 ] && [ $PRESENT_TIME -lt 20 ]; then
   WALLPAPER=$SHADE4_WALLPAPER
 elif [ $PRESENT_TIME -ge 5 ] && [ $PRESENT_TIME -lt 6 ]; then

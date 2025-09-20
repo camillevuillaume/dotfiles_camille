@@ -35,4 +35,8 @@ fcitx5-mozc
 fcitx5-configtool
 chafa
 ffmpeg
-fastfetch
+thunar-volman
+gvfs
+gvfs-google
+gvfs-smb
+
