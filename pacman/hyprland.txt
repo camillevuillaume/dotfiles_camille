@@ -46,4 +46,8 @@ iio-sensor-proxy
 niri
 fuzzel
 swww
+obs-studio
+v4l2loopback-dkms
+v4l2loopback-utils
+swayidle
 
