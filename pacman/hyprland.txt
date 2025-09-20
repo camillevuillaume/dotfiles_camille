@@ -39,4 +39,6 @@ thunar-volman
 gvfs
 gvfs-google
 gvfs-smb
-
+bluez
+bluez-utils
+pipewire-pulse
