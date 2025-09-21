@@ -35,6 +35,7 @@ fd
 imagemagick
 ueberzugpp
 bluez
+bluez-utils
 bc
 ollama
 pipewire-pulse
