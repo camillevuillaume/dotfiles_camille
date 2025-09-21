@@ -8,6 +8,11 @@ export XMODIFIERS=@im=fcitx
 autoload -Uz compinit
 compinit
 
+bindkey -v
+bindkey "^H" backward-delete-char
+bindkey "^?" backward-delete-char
+bindkey '^[[3~' delete-char
+
 source <(fzf --zsh)
 #[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 #zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
