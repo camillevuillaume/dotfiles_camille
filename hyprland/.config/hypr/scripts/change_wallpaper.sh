@@ -1,10 +1,15 @@
 #!/bin/bash
 
 # Quit if hyprpaper is not running.
-if ! pgrep -x hyprpaper > /dev/null; then
+if pgrep -x niri > /dev/null; then
+  if ! pgrep swww-daemon > /dev/null; then
     exit 0
+  fi  
+else
+  if ! pgrep -x hyprpaper > /dev/null; then
+    exit 0
+  fi
 fi
-
 # Define daytime and nighttime image to respective variables
 DAY_WALLPAPER=~/.config/hypr/wallpapers/Fuji-day.jpg
 NIGHT_WALLPAPER=~/.config/hypr/wallpapers/Fuji-night.jpg
@@ -15,6 +20,8 @@ SHADE4_WALLPAPER=~/.config/hypr/wallpapers/Fuji-shade4.jpg
 
 # Calculate the present hour and save it to a variable 
 PRESENT_TIME=$(date +%H)
+
+echo "Current time: $PRESENT_TIME"
 
 # In an if loop, check if current time is between 6 am and 6 pm 
 # and assign day wallpaper to wallpaper variable.
@@ -42,9 +49,18 @@ else
 	WALLPAPER=$NIGHT_WALLPAPER
 fi
 
-# Apply the wallpaper to current display.
-hyprctl hyprpaper wallpaper ,"$WALLPAPER"
+echo "Applying wallpaper: $WALLPAPER"
 
+# Apply the wallpaper to current display.
+if pgrep -x niri > /dev/null; then
+  swww img "$WALLPAPER" 
+else
+  if ! pgrep -x hyprpaper > /dev/null; then
+    exit 0
+  fi
+  hyprctl hyprpaper reload ,"$WALLPAPER"
+  hyprctl hyprpaper unload unused
+fi
 # Exit with success.
 exit 0
 

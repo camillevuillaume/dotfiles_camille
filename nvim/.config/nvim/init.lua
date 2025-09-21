@@ -25,6 +25,11 @@ vim.opt.rtp:prepend(lazypath)
 -- Setup lazy.nvim
 require("lazy").setup("plugins")
 
+vim.api.nvim_set_hl(0, '@lsp.type.string', {})
+vim.api.nvim_set_hl(0, '@lsp.type.string', {})
+
+vim.cmd([[colorscheme tokyonight-night]])
+
 -- Enable virtual text for diagnostics
 vim.diagnostic.config({ virtual_text = true })
 

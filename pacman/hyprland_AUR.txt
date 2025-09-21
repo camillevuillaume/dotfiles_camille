@@ -1,3 +1,4 @@
 waybar-updates
 fastfetch-gif-git
+iio-hyprland-git
 

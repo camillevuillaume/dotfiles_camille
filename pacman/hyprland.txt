@@ -42,3 +42,16 @@ gvfs-smb
 bluez
 bluez-utils
 pipewire-pulse
+thunar-volman
+gvfs
+gvfs-google
+gvfs-smb
+iio-sensor-proxy
+niri
+fuzzel
+swww
+obs-studio
+v4l2loopback-dkms
+v4l2loopback-utils
+swayidle
+

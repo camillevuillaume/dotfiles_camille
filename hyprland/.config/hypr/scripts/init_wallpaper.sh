@@ -49,8 +49,13 @@ else
 fi
 
 # Apply the wallpaper to current display.
-hyprctl hyprpaper reload ,"$WALLPAPER"
-hyprctl hyprpaper unload unused
+if pgrep -x niri > /dev/null; then
+  swww img $WALLPAPER
+else
+  
+  hyprctl hyprpaper reload ,"$WALLPAPER"
+  hyprctl hyprpaper unload unused
+fi
 # Exit with success.
 exit 0
 

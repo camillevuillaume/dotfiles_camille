@@ -1,5 +1,7 @@
 /* From: https://github.com/Sit-Back/wofi-tokyonight/tree/main */
 window {
+    font-family: "Cascadia Code";
+    font-size: 0.8rem;
     background-color: rgba(26, 27, 38, 0.9);
     border-radius: 0.5em;
 }

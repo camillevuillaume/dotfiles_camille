@@ -8,6 +8,11 @@ export XMODIFIERS=@im=fcitx
 autoload -Uz compinit
 compinit
 
+bindkey -v
+bindkey "^H" backward-delete-char
+bindkey "^?" backward-delete-char
+bindkey '^[[3~' delete-char
+
 source <(fzf --zsh)
 #[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 #zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
@@ -21,9 +26,9 @@ alias yayfzf="yay -Slq | fzf --multi --preview 'yay -Si {1}' | xargs -ro sudo ya
 #alias yayfzf="yay -Slq | fzf -q "$1" --preview 'yay -Si {1}'| xargs -ro yay -S"
 alias grep='grep --color=auto'
 alias ls="eza --long --git --icons --hyperlink"
-alias ssh="TERM=xterm-256color ssh"
+alias ssh='TERM="xterm-256color" kitty +kitten ssh'
 
-fastfetch --logo .config/fastfetch/arch.gif --logo-type kitty-direct --logo-animate true --logo-width 30
+fastfetch --logo .config/fastfetch/arch.gif --logo-type kitty-direct --logo-animate true --logo-width 20
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd

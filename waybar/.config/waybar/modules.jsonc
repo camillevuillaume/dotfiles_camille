@@ -1,0 +1,100 @@
+{
+  "clock": {
+    "format": "<span foreground='#7aa2f7'>   </span>{:%a %d %H:%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "<span size='13000' foreground='#a6e3a1'>{icon} </span> {capacity}%",
+    "format-warning": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {capacity}%",
+    "format-critical": "<span size='13000' foreground='#E38C8F'>{icon} </span> {capacity}%",
+    "format-charging": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+    "format-plugged": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+    "format-alt": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {time}",
+    "format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "tooltip-format": "{time}"
+  },
+  "network": {
+    "format-wifi": "<span size='13000' foreground='#7aa2f7'>  </span>",
+    "format-ethernet": "<span size='13000' foreground='#7aa2f7'>󰤭  </span> Disconnected",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "<span size='13000' foreground='#7aa2f7'>  </span>Disconnected",
+    "tooltip-format-wifi": "{essid} Signal Strenght: {signalStrength}%",
+    "on-click": "kitty --title FloatingKitty impala"
+  },
+  "pulseaudio": {
+      "format": "{icon}  {volume}%",
+      "format-muted": "",
+      "format-icons": {
+          "default": ["", "", " "]
+      },
+      "on-click": "hyprctl dispatch exec [float] pavucontrol"
+  },
+  "hyprland/workspaces": {
+		"format": "{name} : {icon}",
+		"format-icons": {
+			"1": "",
+			"2": "",
+			"3": "",
+			"4": "",
+			"5": "",
+			"active": "",
+			
+      "default": ""
+    },
+
+    "persistent-workspaces": {
+      "Virtual-1": [1, 2, 3, 4, 5]
+    }
+  },
+  "custom/pacman": {
+    "format": "<span size='13000' foreground='#7aa2f7'>{icon} </span>{0}",
+    "return-type": "json",
+    "format-icons": {
+      "pending-updates": " ",
+      "updated": ""
+    },
+    "exec-if": "which waybar-updates",
+    "exec": "waybar-updates"
+  },
+  "custom/power": {
+    "format" : "<span size='13000' foreground='#7aa2f7'> ⏻ </span>",
+		"tooltip": false,
+		"menu": "on-click",
+		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
+		"menu-actions": {
+			"shutdown": "shutdown",
+			"reboot": "reboot",
+			"suspend": "systemctl suspend",
+			"hibernate": "systemctl hibernate",
+	  }
+  },
+  "bluetooth": {
+	  "format": " {status}",
+	  "format-connected": " {device_alias}",
+	  "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+	  // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
+	  "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+	  "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+	  "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+	  "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+    "on-click": "kitty --title FloatingKitty bluetoothctl"
+  },
+  "niri/workspaces": {
+    "disable-click": true,
+    "format": "{icon}",
+    "format-icons": {
+      "active": " ",
+      "default": " ",
+    },
+  },
+  "niri/window": {
+    "icon": true,
+    "icon-size": 18,
+    "max-length": 70,
+  },
+}
