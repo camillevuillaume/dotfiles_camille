@@ -54,4 +54,6 @@ obs-studio
 v4l2loopback-dkms
 v4l2loopback-utils
 swayidle
+xdg-desktop-portal-hyprland
+xdg-desktop-portal-gtk
 

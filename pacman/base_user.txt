@@ -62,3 +62,7 @@ cava
 bind
 chrony
 rsync
+texlive-langjapanese
+usbutils
+nfs-utils
+

@@ -2,6 +2,7 @@ vlc
 vlc-plugin-x264
 vlc-plugin-x265
 vlc-plugin-ffmpeg
+vlc-plugin-mpeg2
 prusa-slicer
 guitarix
 
