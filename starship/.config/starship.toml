@@ -5,7 +5,7 @@ add_newline = true
 
 # Change the default prompt format
 format = """
-[╭╴](238)$username$directory$git_branch$git_status$time
+[╭╴](238)$username$directory$git_branch$git_status
 [╰─](238)$character"""
 
 # Don't display container module

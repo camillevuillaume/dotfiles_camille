@@ -3,6 +3,7 @@ export SUDO_EDITOR="$EDITOR"
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
+export HOSTNAME=$HOST
 
 
 autoload -Uz compinit
