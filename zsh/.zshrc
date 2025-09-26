@@ -8,6 +8,8 @@ export XMODIFIERS=@im=fcitx
 autoload -Uz compinit
 compinit
 
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 bindkey -v
 bindkey "^H" backward-delete-char
 bindkey "^?" backward-delete-char
