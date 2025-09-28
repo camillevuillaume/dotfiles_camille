@@ -5,7 +5,7 @@ add_newline = true
 
 # Change the default prompt format
 format = """
-[╭╴](238)$username$directory$git_branch$git_status
+[╭╴](238)$username$sudo$directory$git_branch$git_status
 [╰─](238)$character"""
 
 # Don't display container module
@@ -31,7 +31,7 @@ show_always = true
 
 [sudo]
 format = "[$symbol]($style)"
-style = "bold italic #bb9af7"
+style = "bold italic #f7768e"
 symbol = "⋈┈"
 disabled = false
 

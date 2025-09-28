@@ -66,4 +66,4 @@ texlive-langjapanese
 usbutils
 nfs-utils
 zsh-syntax-highlighting
-
+tig
