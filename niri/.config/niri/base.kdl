@@ -201,13 +201,13 @@ spawn-at-startup "waybar" "--config" ".config/waybar/config_niri.jsonc"
 
 spawn-at-startup "swww-daemon"
 spawn-at-startup "swayidle" "-w"
-spawn-at-startup "swaync"
+//spawn-at-startup "swaync"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
 spawn-sh-at-startup ".config/hypr/scripts/init_wallpaper.sh"
 spawn-sh-at-startup ".config/init/scripts/init_conf.sh"
-
+spawn-sh-at-startup ".config/swayidle/swayidle_init_by_host.sh"
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
     skip-at-startup
