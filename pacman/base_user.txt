@@ -67,3 +67,6 @@ usbutils
 nfs-utils
 zsh-syntax-highlighting
 tig
+transmission-cli
+transmission-gtk
+
