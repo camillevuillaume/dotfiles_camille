@@ -69,4 +69,5 @@ zsh-syntax-highlighting
 tig
 transmission-cli
 transmission-gtk
+plymouth
 
