@@ -9,6 +9,7 @@ export HOSTNAME=$HOST
 autoload -Uz compinit
 compinit
 
+[ -f /etc/arch-release ] && 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 bindkey -v
