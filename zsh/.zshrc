@@ -16,6 +16,7 @@ bindkey "^H" backward-delete-char
 bindkey "^?" backward-delete-char
 bindkey '^[[3~' delete-char
 
+[ -f /etc/arch-release ] && 
 source <(fzf --zsh)
 #[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 #zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
