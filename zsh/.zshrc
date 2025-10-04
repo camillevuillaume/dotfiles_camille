@@ -22,15 +22,25 @@ source <(fzf --zsh)
 zstyle ':completion:*' menu select
 zstyle ':completion::complete:*' gain-privileges 1
 
+# Run starship if installed
+[ -x "$(command -v starship)" ] &&
 eval "$(starship init zsh)"
 
-alias pacfzf="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"
+# Aliases spefici to Arch Linux
+
+[ -f /etc/arch-release ] && 
+alias pacfzf="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S" &&
 alias yayfzf="yay -Slq | fzf --multi --preview 'yay -Si {1}' | xargs -ro sudo yay -S"
-#alias yayfzf="yay -Slq | fzf -q "$1" --preview 'yay -Si {1}'| xargs -ro yay -S"
+
 alias grep='grep --color=auto'
+
+[ -x "$(command -v eza)" ] &&
 alias ls="eza --long --git --icons --hyperlink"
+
+[ -x "$(command -v kitty)" ] &&
 alias ssh='TERM="xterm-256color" kitty +kitten ssh'
 
+[ -x "$(command -v fastfetch)" ] &&
 fastfetch --logo .config/fastfetch/arch.gif --logo-type kitty-direct --logo-animate true --logo-width 20
 
 function y() {
