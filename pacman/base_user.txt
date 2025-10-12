@@ -28,6 +28,7 @@ texlive-fontsrecommended
 texlive-bibtexextra
 texlive-bin
 texlive-binextra
+texlive-plaingeneric
 impala
 reflector
 fd
