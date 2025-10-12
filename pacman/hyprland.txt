@@ -11,6 +11,9 @@ kitty
 yazi
 starship
 thunar
+thunar-archive-plugin
+thunar-volman
+thunar-media-tags-plugin
 ffmpegthumbnailer
 firefox
 gnome-themes-extra
@@ -35,14 +38,12 @@ fcitx5-mozc
 fcitx5-configtool
 chafa
 ffmpeg
-thunar-volman
 gvfs
 gvfs-google
 gvfs-smb
 bluez
 bluez-utils
 pipewire-pulse
-thunar-volman
 gvfs
 gvfs-google
 gvfs-smb
