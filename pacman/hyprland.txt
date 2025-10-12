@@ -59,4 +59,5 @@ xdg-desktop-portal-hyprland
 xdg-desktop-portal-gtk
 xarchiver
 xournalpp
+obsidian
 
