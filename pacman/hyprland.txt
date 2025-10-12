@@ -57,4 +57,4 @@ v4l2loopback-utils
 swayidle
 xdg-desktop-portal-hyprland
 xdg-desktop-portal-gtk
-
+xarchiver
