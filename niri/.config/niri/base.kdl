@@ -200,7 +200,7 @@ layout {
 spawn-at-startup "waybar" "--config" ".config/waybar/config_niri.jsonc" 
 
 spawn-at-startup "swww-daemon"
-spawn-at-startup "swayidle" "-w"
+//spawn-at-startup "swayidle" "-w"
 //spawn-at-startup "swaync"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
