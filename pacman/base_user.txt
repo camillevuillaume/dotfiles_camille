@@ -28,6 +28,8 @@ texlive-fontsrecommended
 texlive-bibtexextra
 texlive-bin
 texlive-binextra
+texlive-langjapanese
+texlive-langcjk
 texlive-plaingeneric
 impala
 reflector
@@ -71,4 +73,4 @@ tig
 transmission-cli
 transmission-gtk
 plymouth
-
+stylua
