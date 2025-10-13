@@ -76,4 +76,5 @@ plymouth
 stylua
 fontconfig
 qemu-system-x86
+qemu-img
 

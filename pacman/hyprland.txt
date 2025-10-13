@@ -61,4 +61,6 @@ xarchiver
 xournalpp
 obsidian
 xorg-xwayland
+tigervnc
+wayvnc
 
