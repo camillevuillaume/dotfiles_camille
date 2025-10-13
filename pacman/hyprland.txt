@@ -60,4 +60,5 @@ xdg-desktop-portal-gtk
 xarchiver
 xournalpp
 obsidian
+xorg-xwayland
 
