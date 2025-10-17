@@ -198,7 +198,6 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar" "--config" ".config/waybar/config_niri.jsonc" 
-
 spawn-at-startup "swww-daemon"
 //spawn-at-startup "swayidle" "-w"
 //spawn-at-startup "swaync"
