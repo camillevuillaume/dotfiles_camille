@@ -82,4 +82,5 @@ python-requests
 libdvdread
 libdvdcss
 libdvdnav
+chrony
 
