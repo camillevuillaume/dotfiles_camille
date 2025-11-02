@@ -79,4 +79,7 @@ qemu-system-x86
 qemu-img
 python-lxml
 python-requests
+libdvdread
+libdvdcss
+libdvdnav
 
