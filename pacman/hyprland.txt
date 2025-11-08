@@ -63,4 +63,5 @@ obsidian
 xorg-xwayland
 tigervnc
 wayvnc
+bluetui
 
