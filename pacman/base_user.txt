@@ -19,6 +19,7 @@ zsh-completions
 clang
 unzip
 nodejs
+npm
 texlive-basic
 texlive-latex
 texlive-latexrecommended
@@ -83,4 +84,5 @@ libdvdread
 libdvdcss
 libdvdnav
 chrony
+pdftk
 
