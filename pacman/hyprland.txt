@@ -64,4 +64,5 @@ xorg-xwayland
 tigervnc
 wayvnc
 bluetui
+wiremix
 

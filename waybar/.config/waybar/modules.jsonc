@@ -32,7 +32,8 @@
       "format-icons": {
           "default": ["", "", " "]
       },
-      "on-click": "hyprctl dispatch exec [float] pavucontrol"
+      //"on-click": "hyprctl dispatch exec [float] pavucontrol"
+      "on-click": "kitty --title FloatingKitty wiremix"
   },
   "hyprland/workspaces": {
 		"format": "{name} : {icon}",
