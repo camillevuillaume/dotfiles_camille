@@ -56,4 +56,4 @@ bindkey "^H" backward-delete-char
 bindkey "^?" backward-delete-char
 bindkey '^[[3~' delete-char
 
-
+eval "$(zoxide init zsh)"

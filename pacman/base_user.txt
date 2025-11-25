@@ -85,4 +85,6 @@ libdvdcss
 libdvdnav
 chrony
 pdftk
+python-pypdf
+python-cryptography
 

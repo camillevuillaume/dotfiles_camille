@@ -65,4 +65,5 @@ tigervnc
 wayvnc
 bluetui
 wiremix
+evince
 
