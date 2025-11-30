@@ -67,4 +67,5 @@ bluetui
 wiremix
 evince
 xdg-desktop-portal-gnome
+wayvnc
 

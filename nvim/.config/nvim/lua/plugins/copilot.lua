@@ -36,50 +36,10 @@ return {
 				desc = "Toggle (CopilotChat)",
 				mode = { "n", "v" },
 			},
-			{
-				"<leader>cx",
-				function()
-					return require("CopilotChat").reset()
-				end,
-				desc = "Clear (CopilotChat)",
-				mode = { "n", "v" },
-			},
-			{
-				"<leader>cq",
-				function()
-					vim.ui.input({
-						prompt = "Quick Chat: ",
-					}, function(input)
-						if input ~= "" then
-							require("CopilotChat").ask(input)
-						end
-					end)
-				end,
-				desc = "Quick Chat (CopilotChat)",
-				mode = { "n", "v" },
-			},
-			{
-				"<leader>ch",
-				function()
-					local actions = require("CopilotChat.actions")
-					require("CopilotChat.integrations.telescope").pick(actions.help_actions())
-				end,
-				desc = "CopilotChat - Help actions",
-			},
-			-- Show prompts actions with telescope
-			{
-				"<leader>ca",
-				function()
-					local actions = require("CopilotChat.actions")
-					require("CopilotChat.integrations.telescope").pick(actions.prompt_actions())
-				end,
-				desc = "CopilotChat - Prompt actions",
-			},
-			-- Code related commands
-			{ "<leader>ce", "<cmd>CopilotChatExplain<cr>", desc = "CopilotChat - Explain code" },
-			{ "<leader>ct", "<cmd>CopilotChatTests<cr>", desc = "CopilotChat - Generate tests" },
-			{ "<leader>cr", "<cmd>CopilotChatReview<cr>", desc = "CopilotChat - Review code" },
-			{ "<leader>cR", "<cmd>CopilotChatRefactor<cr>", desc = "CopilotChat - Refactor code" },
+      { "<leader>ce", "<cmd>CopilotChatExplain<CR>", desc = "Explain code" },
+      { "<leader>cf", "<cmd>CopilotChatFix<CR>", desc = "Fix code issues" },
+      { "<leader>cq", "<cmd>CopilotChatQuick<CR>", desc = "Quick chat" },
+      { "<leader>ct", "<cmd>CopilotChatTests<CR>", desc = "Generate tests" },
 		},
 		config = function(_, opts)
 			local chat = require("CopilotChat")
