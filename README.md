@@ -21,6 +21,6 @@ https://github.com/user-attachments/assets/14624606-a76d-4328-a330-69f4edd05afe
 - Other tools like yazi, eza, ncspot, cava, btop...
 - Supporting different configurations for two hosts (laptop and desktop)
 
-## Useage
+## Usage
 
 Download or clone, then [stow](https://www.gnu.org/software/stow/) what you need. You will probably need to change the host names for Hyprland and Niri.
