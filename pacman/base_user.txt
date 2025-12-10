@@ -88,4 +88,5 @@ pdftk
 python-pypdf
 python-cryptography
 traceroute
+python-debugpy
 
