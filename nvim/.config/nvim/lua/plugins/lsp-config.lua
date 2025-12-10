@@ -30,10 +30,30 @@ return {
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
       vim.keymap.set({ "n" }, "<leader>ca", vim.lsp.buf.code_action, {})
-      vim.fn.sign_define("DiagnosticSignError", { text = "", texthl = "DiagnosticSignError" })
-      vim.fn.sign_define("DiagnosticSignWarn", { text = "", texthl = "DiagnosticSignWarn" })
-      vim.fn.sign_define("DiagnosticSignInfo", { text = "", texthl = "DiagnosticSignInfo" })
-      vim.fn.sign_define("DiagnosticSignHint", { text = "", texthl = "DiagnosticSignHint" })
+      -- vim.fn.sign_define("DiagnosticSignError", { text = "", texthl = "DiagnosticSignError" })
+      -- vim.fn.sign_define("DiagnosticSignWarn", { text = "", texthl = "DiagnosticSignWarn" })
+      -- vim.fn.sign_define("DiagnosticSignInfo", { text = "", texthl = "DiagnosticSignInfo" })
+      -- vim.fn.sign_define("DiagnosticSignHint", { text = "", texthl = "DiagnosticSignHint" })
+      vim.diagnostic.config({
+        virtual_text = false,
+        underline = true,
+        signs = {
+          text = {
+            [vim.diagnostic.severity.ERROR] = "",
+            [vim.diagnostic.severity.WARN] = "",
+            [vim.diagnostic.severity.INFO] = "",
+            [vim.diagnostic.severity.HINT] = "",
+          },
+          linehl = {
+            [vim.diagnostic.severity.ERROR] = "ErrorMsg",
+          },
+          numhl = {
+            [vim.diagnostic.severity.WARN] = "WarningMsg",
+          },
+        },
+      })
+      -- vim.diagnostic.config({ signs = { text = { [vim.diagnostic.severity.INFO] = ""}, texthl = "DiagnosticSignInfo" }})
+      -- vim.diagnostic.config({ signs = { text = { [vim.diagnostic.severity.HINT] = ""}, texthl = "DiagnosticSignHint" }})
     end,
   },
 }

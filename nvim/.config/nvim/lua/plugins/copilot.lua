@@ -43,7 +43,7 @@ return {
 		},
 		config = function(_, opts)
 			local chat = require("CopilotChat")
-			vim.g.copilot_no_tab_map = true
+			-- vim.g.copilot_no_tab_map = true
 			vim.keymap.set("i", "<S-Tab>", 'copilot#Accept("\\<S-Tab>")', { expr = true, replace_keycodes = false })
 			vim.api.nvim_create_autocmd("BufEnter", {
 				pattern = "copilot-chat",
