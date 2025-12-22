@@ -1,7 +1,7 @@
 return {
   {
     "ggml-org/llama.vim",
-    -- enable = false,
+    enable = false,
     init = function()
       vim.g.llama_config = {
         endpoint = "http://192.168.3.193:11434",
@@ -10,7 +10,7 @@ return {
   },
   {
     "github/copilot.vim",
-    enable = false,
+    -- enable = false,
   },
   {
     "CopilotC-Nvim/CopilotChat.nvim",
