@@ -42,3 +42,23 @@ vim.keymap.set('n', '<C-Down>',  '<C-w>j')
 vim.keymap.set('n', '<C-Up>',    '<C-w>k')
 vim.keymap.set('n', '<C-Right>', '<C-w>l')
 
+vim.opt.number = true
+vim.opt.relativenumber = true
+
+local numbertoggle = vim.api.nvim_create_augroup("numbertoggle", { clear = true })
+
+vim.api.nvim_create_autocmd({ "BufEnter", "FocusGained", "InsertLeave" }, {
+  group = numbertoggle,
+  pattern = "*",
+  callback = function()
+    vim.opt.relativenumber = true
+  end,
+})
+
+vim.api.nvim_create_autocmd({ "BufLeave", "FocusLost", "InsertEnter" }, {
+  group = numbertoggle,
+  pattern = "*",
+  callback = function()
+    vim.opt.relativenumber = false
+  end,
+})
