@@ -1,7 +1,7 @@
 require("vim-options")
 vim.g.maplocalleader = "\\"
 
--- Bootstrap lazy.nvim
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"
@@ -35,6 +35,7 @@ vim.diagnostic.config({ virtual_text = true })
 
 -- Enable mouse
 vim.opt.mouse = "a"
+  vim.opt.mousemoveevent = true
 
 -- remap movement keys
 vim.keymap.set('n', '<C-Left>',  '<C-w>h')
@@ -47,18 +48,30 @@ vim.opt.relativenumber = true
 
 local numbertoggle = vim.api.nvim_create_augroup("numbertoggle", { clear = true })
 
-vim.api.nvim_create_autocmd({ "BufEnter", "FocusGained", "InsertLeave" }, {
+vim.api.nvim_create_autocmd({ "InsertLeave" }, {
   group = numbertoggle,
   pattern = "*",
   callback = function()
-    vim.opt.relativenumber = true
+    if vim.bo.filetype ~= "copilot-chat" then
+      vim.opt.relativenumber = true
+    end
   end,
 })
 
-vim.api.nvim_create_autocmd({ "BufLeave", "FocusLost", "InsertEnter" }, {
+vim.api.nvim_create_autocmd({ "InsertEnter" }, {
   group = numbertoggle,
   pattern = "*",
   callback = function()
-    vim.opt.relativenumber = false
+    if vim.bo.filetype ~= "copilot-chat" then
+      vim.opt.relativenumber = false
+    end
+  end,
+})
+
+vim.api.nvim_create_autocmd("BufEnter", {
+  pattern = "copilot-chat",
+  callback = function()
+    vim.opt_local.relativenumber = false
+    vim.opt_local.number = false
   end,
 })
