@@ -9,7 +9,7 @@ return {
     "mason-org/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "pylsp", "clangd" },
+        ensure_installed = { "lua_ls", "pylsp", "clangd", "ts_ls" },
       })
     end,
   },
@@ -30,14 +30,11 @@ return {
       vim.lsp.enable('pylsp')
       vim.lsp.enable('lua_ls')
       vim.lsp.enable('clangd')
+      vim.lsp.enable('ts_ls')
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
       vim.keymap.set({ "n" }, "<leader>ca", vim.lsp.buf.code_action, {})
-      -- vim.fn.sign_define("DiagnosticSignError", { text = "", texthl = "DiagnosticSignError" })
-      -- vim.fn.sign_define("DiagnosticSignWarn", { text = "", texthl = "DiagnosticSignWarn" })
-      -- vim.fn.sign_define("DiagnosticSignInfo", { text = "", texthl = "DiagnosticSignInfo" })
-      -- vim.fn.sign_define("DiagnosticSignHint", { text = "", texthl = "DiagnosticSignHint" })
       vim.diagnostic.config({
         virtual_text = false,
         underline = true,
