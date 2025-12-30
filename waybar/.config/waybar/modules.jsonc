@@ -74,6 +74,12 @@
 			"hibernate": "systemctl hibernate",
 	  }
   },
+  "custom/weather": {
+    "exec-if": "test -f ~/.config/waybar/waywttr.sh",
+    "exec": "~/.config/waybar/waywttr.sh bar",
+    "interval": 600,
+    "on-click": "kitty --title FloatingKitty ~/.config/waybar/waywttr.sh popup"
+  },
   "bluetooth": {
 	  "format": " {status}",
 	  "format-connected": " {device_alias}",

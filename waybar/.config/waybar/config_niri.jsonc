@@ -3,5 +3,5 @@
   "include": ["modules.jsonc"],
   "modules-left": ["niri/workspaces"],
   "modules-center": ["niri/window"],
-  "modules-right": ["network", "bluetooth", "pulseaudio", "battery", "clock", "custom/pacman", "custom/power"],
+  "modules-right": ["network", "bluetooth", "pulseaudio", "battery", "custom/weather", "clock", "custom/pacman", "custom/power"],
 }
