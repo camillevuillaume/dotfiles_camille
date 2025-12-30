@@ -15,9 +15,7 @@ weather_popup() {
 
 
 get_config() {
-  if [ -f "./waywttr.conf" ]; then
-    source "./waywttr.conf"
-  elif [[ -f "$HOME/.config/waywttr.conf" ]]; then
+  if [[ -f "$HOME/.config/waywttr.conf" ]]; then
     source "$HOME/.config/waywttr.conf"
   elif [[ -f "$HOME/.config/waybar/waywttr.conf" ]]; then
     source "$HOME/.config/waybar/waywttr.conf"
