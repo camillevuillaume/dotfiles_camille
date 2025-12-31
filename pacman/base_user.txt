@@ -102,6 +102,5 @@ vscode-json-languageserver
 vscode-css-languageserver
 vscode-html-languageserver
 prettier
-
-
+python-pip
 
