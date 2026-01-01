@@ -57,3 +57,41 @@ bindkey "^?" backward-delete-char
 bindkey '^[[3~' delete-char
 
 eval "$(zoxide init zsh)"
+
+# Auto-activate Python venv on directory change
+auto_venv() {
+  # Check if we're in a Python project (has requirements.txt or pyproject.toml)
+  if [[ -f "pyproject.toml" ]]; then
+    local venv_dir=".venv"
+    
+    # Create venv if it doesn't exist
+    if [[ ! -d "$venv_dir" ]]; then
+      python3 -m venv "$venv_dir"
+      
+      if [[ -f "pyproject.toml" ]]; then
+        echo "Installing from pyproject.toml..."
+        "$venv_dir/bin/pip" install -e .
+      fi
+    fi
+    
+    # Activate venv if not already activated
+    if [[ "$VIRTUAL_ENV" != "$PWD/$venv_dir" ]]; then
+      source "$venv_dir/bin/activate"
+      echo "Activated venv: $venv_dir"
+    fi
+  else
+    # Deactivate venv if we left a Python project directory
+    if [[ -n "$VIRTUAL_ENV" ]]; then
+      deactivate
+      echo "Deactivated venv"
+    fi
+  fi
+}
+
+# Register the hook
+autoload -U add-zsh-hook
+add-zsh-hook chpwd auto_venv
+
+# Run once on shell start
+auto_venv
+

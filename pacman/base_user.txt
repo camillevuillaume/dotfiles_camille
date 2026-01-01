@@ -103,4 +103,4 @@ vscode-css-languageserver
 vscode-html-languageserver
 prettier
 python-pip
-
+python-pylint-venv
