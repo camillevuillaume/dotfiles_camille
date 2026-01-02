@@ -105,4 +105,7 @@ prettier
 python-pip
 python-pylint-venv
 python-setuptools
+luarocks
+pipewire
+pipewire-jack
 
