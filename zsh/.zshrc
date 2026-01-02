@@ -66,7 +66,8 @@ auto_venv() {
     
     # Create venv if it doesn't exist
     if [[ ! -d "$venv_dir" ]]; then
-      python3 -m venv --system-site-packages "$venv_dir"
+      # python3 -m venv --system-site-packages "$venv_dir"
+      python3 -m venv "$venv_dir"
       
       if [[ -f "pyproject.toml" ]]; then
         echo "Installing from pyproject.toml..."
