@@ -144,9 +144,9 @@ c.tabs.width = "7%"
 c.fonts.default_family = []
 c.fonts.default_size = "10pt"
 c.fonts.web.family.fixed = "monospace"
-c.fonts.web.family.sans_serif = "monospace"
-c.fonts.web.family.serif = "monospace"
-c.fonts.web.family.standard = "monospace"
+c.fonts.web.family.sans_serif = "Cascadia Code"
+c.fonts.web.family.serif = "Cascadia Code"
+c.fonts.web.family.standard = "Cascadia Code"
 
 # privacy - adjust these settings based on your preference
 # config.set("completion.cmd_history_max_items", 0)
