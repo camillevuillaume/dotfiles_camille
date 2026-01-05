@@ -46,9 +46,9 @@ argument_parser = argparse.ArgumentParser(
     epilog=EPILOG,
 )
 argument_parser.add_argument('url', nargs='?', default=os.getenv('QUTE_URL'))
-argument_parser.add_argument('--dmenu-invocation', '-d', default='wofi --dmenu -i -p Bitwarden',
+argument_parser.add_argument('--dmenu-invocation', '-d', default='fuzzel --dmenu -i -p Bitwarden',
                              help='Invocation used to execute a dmenu-provider')
-argument_parser.add_argument('--password-prompt-invocation', '-p', default='wofi --dmenu -p "Master Password" -password -lines 0',
+argument_parser.add_argument('--password-prompt-invocation', '-p', default='fuzzel --dmenu --prompt-only="Master Password " --password',
                              help='Invocation used to prompt the user for their Bitwarden password')
 argument_parser.add_argument('--no-insert-mode', '-n', dest='insert_mode', action='store_false',
                              help="Don't automatically enter insert mode")
