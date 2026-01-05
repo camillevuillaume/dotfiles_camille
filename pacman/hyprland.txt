@@ -70,4 +70,5 @@ xdg-desktop-portal-gnome
 qt6-base
 qt6-wayland
 qutebrowser
+rofi
 

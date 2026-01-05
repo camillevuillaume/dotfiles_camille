@@ -18,7 +18,6 @@ zsh
 zsh-completions
 clang
 unzip
-nodejs
 npm
 texlive-basic
 texlive-latex
@@ -96,6 +95,7 @@ python-numpy
 python-pandas
 python-matplotlib
 python-scipy
+python-tldextract
 typescript
 typescript-language-server
 vscode-json-languageserver
@@ -108,4 +108,5 @@ python-setuptools
 luarocks
 pipewire
 pipewire-jack
+bitwarden-cli
 
