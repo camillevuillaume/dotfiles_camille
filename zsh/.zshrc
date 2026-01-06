@@ -35,7 +35,12 @@ if [ -f /etc/os-release ]; then
 
         alias ssh='TERM="xterm-256color" kitty +kitten ssh'
 
-        fastfetch --logo .config/fastfetch/arch.gif --logo-type kitty-direct --logo-animate true --logo-width 20
+        if [ ! -f  /dev/shm/fastfetch-run ]; then
+          touch /dev/shm/fastfetch-run
+          fastfetch --logo .config/fastfetch/arch.gif --logo-type kitty-direct --logo-animate true --logo-width 20
+        else
+          fastfetch
+        fi 
 
         function y() {
           local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
@@ -57,6 +62,7 @@ bindkey "^?" backward-delete-char
 bindkey '^[[3~' delete-char
 
 eval "$(zoxide init zsh)"
+eval "$(batman --export-env)"
 
 # Auto-activate Python venv on directory change
 auto_venv() {
