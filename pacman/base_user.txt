@@ -112,4 +112,8 @@ bitwarden-cli
 wikiman
 tealdeer
 bat-extras
+bash-language-server
+shfmt
+shellharden
+rust
 
