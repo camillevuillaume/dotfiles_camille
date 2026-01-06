@@ -71,4 +71,5 @@ qt6-base
 qt6-wayland
 qutebrowser
 rofi
+openrgb
 
