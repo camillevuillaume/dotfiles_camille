@@ -32,7 +32,6 @@
       "format-icons": {
           "default": ["", "", " "]
       },
-      //"on-click": "hyprctl dispatch exec [float] pavucontrol"
       "on-click": "kitty --title FloatingKitty wiremix"
   },
   "hyprland/workspaces": {
@@ -71,15 +70,15 @@
 			"shutdown": "shutdown",
 			"reboot": "reboot",
 			"suspend": "systemctl suspend",
-			"hibernate": "systemctl hibernate",
+			"hibernate": "systemctl hibernate"
 	  }
   },
   "custom/weather": {
     "exec-if": "test -f ~/.config/waybar/wesh/weather_bar.sh",
     "exec": "~/.config/waybar/wesh/weather_bar.sh",
+    "return-type": "json",
     "interval": 3600,
-    // "on-click": "kitty --title FloatingKitty ~/.config/waybar/waywttr.sh popup"
-    "on-click": "kitty --title FloatingKitty ~/.config/waybar/wesh/weather_today.sh"
+    "on-click": "kitty --title FloatingKitty -o remember_window_size=no -o initial_window_width=46c -o initial_window_height=36c ~/.config/waybar/wesh/weather_today.sh"
   },
   "bluetooth": {
 	  "format": " {status}",
@@ -98,12 +97,12 @@
     "format": "{icon}",
     "format-icons": {
       "active": " ",
-      "default": " ",
-    },
+      "default": " "
+    }
   },
   "niri/window": {
     "icon": true,
     "icon-size": 18,
-    "max-length": 70,
-  },
+    "max-length": 70
+  }
 }
