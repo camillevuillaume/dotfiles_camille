@@ -75,10 +75,11 @@
 	  }
   },
   "custom/weather": {
-    "exec-if": "test -f ~/.config/waybar/waywttr.sh",
-    "exec": "~/.config/waybar/waywttr.sh bar",
-    "interval": 600,
-    "on-click": "kitty --title FloatingKitty ~/.config/waybar/waywttr.sh popup"
+    "exec-if": "test -f ~/.config/waybar/wesh/weather_bar.sh",
+    "exec": "~/.config/waybar/wesh/weather_bar.sh",
+    "interval": 3600,
+    // "on-click": "kitty --title FloatingKitty ~/.config/waybar/waywttr.sh popup"
+    "on-click": "kitty --title FloatingKitty ~/.config/waybar/wesh/weather_today.sh"
   },
   "bluetooth": {
 	  "format": " {status}",

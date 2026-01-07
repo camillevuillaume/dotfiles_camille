@@ -1,0 +1,3 @@
+[submodule "waybar/.config/waybar/wesh"]
+	path = waybar/.config/waybar/wesh
+	url = git@github.com:camillevuillaume/wesh.git
