@@ -39,7 +39,7 @@ if [ -f /etc/os-release ]; then
           touch /dev/shm/fastfetch-run
           fastfetch --logo .config/fastfetch/arch.gif --logo-type kitty-direct --logo-animate true --logo-width 20
         else
-          fastfetch
+          fastfetch --logo "arch_small"
         fi 
 
         function y() {

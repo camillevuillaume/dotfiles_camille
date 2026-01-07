@@ -2,6 +2,7 @@ return {
   "nvimtools/none-ls.nvim",
   dependencies = {
     "jay-babu/mason-null-ls.nvim",
+    "nvimtools/none-ls-extras.nvim",
   },
   config = function()
     local null_ls = require("null-ls")
@@ -16,7 +17,8 @@ return {
           filetypes = { "javascript", "typescript", "css", "html", "json", "yaml", "markdown" },
         }),
         null_ls.builtins.formatting.shfmt,
-        null_ls.builtins.diagnostics.shellharden,
+        -- null_ls.builtins.diagnostics.shellharden,
+        null_ls.builtins.formatting.shellharden,
       },
     })
     
