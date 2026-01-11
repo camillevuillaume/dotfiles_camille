@@ -116,4 +116,5 @@ bash-language-server
 shfmt
 shellharden
 rust
+uv
 
