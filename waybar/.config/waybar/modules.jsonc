@@ -78,7 +78,7 @@
     "exec": "~/.config/waybar/wesh/weather_bar.sh",
     "return-type": "json",
     "interval": 3600,
-    "on-click": "kitty --title FloatingKitty -o remember_window_size=no -o initial_window_width=46c -o initial_window_height=36c ~/.config/waybar/wesh/weather_today.sh"
+    "on-click": "kitty --title FloatingKitty -o remember_window_size=no -o initial_window_width=49c -o initial_window_height=36c ~/.config/waybar/wesh/weather_today.sh"
   },
   "bluetooth": {
 	  "format": " {status}",
