@@ -5,6 +5,7 @@ return {
 		init = function()
 			vim.g.llama_config = {
 				endpoint = "http://192.168.3.190:11436/infill",
+				-- endpoint = "http://192.168.3.190:11434/infill",
 				-- Local Context (Line based)
 				n_prefix = 64, -- ~640 tokens
 				n_suffix = 32, -- ~320 tokens
