@@ -3,4 +3,5 @@ fastfetch-gif-git
 iio-hyprland-git
 libbdplus
 bluraybackup
+ltex-ls-bin
 
