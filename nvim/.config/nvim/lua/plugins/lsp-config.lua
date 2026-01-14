@@ -27,24 +27,51 @@ return {
 			-- lspconfig.clangd.setup({
 			--   capabilities = capabilities,
 			-- })
-			local lspconfig = require("lspconfig")
-
-			-- Setup your servers here
-			lspconfig.pylsp.setup({
+			vim.lsp.config("pylsp", {
 				settings = {
 					pylsp = {
 						plugins = {
 							jedi = {
-								extra_paths = {
-									vim.fn.getcwd(),
-								},
+								extra_paths = { vim.fn.getcwd() },
 								environment = ".venv",
 							},
 						},
 					},
 				},
 			})
-			lspconfig.ltex.setup{}
+
+			vim.lsp.config("ltex_plus", {
+				settings = {
+					ltex = {
+						language = "en-US",
+						-- any other ltex-plus specific settings
+					},
+				},
+			})
+			-- vim.lsp.config("ltex", {})
+
+			-- 3. Enable them (pass a string or a list of strings)
+			vim.lsp.enable("pylsp")
+			vim.lsp.enable("ltex")
+
+			-- local lspconfig = require("lspconfig")
+
+			-- -- Setup your servers here
+			-- lspconfig.pylsp.setup({
+			-- 	settings = {
+			-- 		pylsp = {
+			-- 			plugins = {
+			-- 				jedi = {
+			-- 					extra_paths = {
+			-- 						vim.fn.getcwd(),
+			-- 					},
+			-- 					environment = ".venv",
+			-- 				},
+			-- 			},
+			-- 		},
+			-- 	},
+			-- })
+			-- lspconfig.ltex.setup({})
 			-- lspconfig.ltex.setup({
 			-- 	-- cmd = {
 			-- 	-- 	"ltex-ls",
