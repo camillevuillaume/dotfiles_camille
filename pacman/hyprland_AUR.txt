@@ -4,4 +4,5 @@ iio-hyprland-git
 libbdplus
 bluraybackup
 ltex-ls-bin
+calibre-plugin-dedrm
 

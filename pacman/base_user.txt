@@ -117,4 +117,5 @@ shfmt
 shellharden
 rust
 uv
+python-lsp-server
 
