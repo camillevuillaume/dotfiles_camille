@@ -126,11 +126,13 @@ c.auto_save.session = True  # save tabs on quit/restart
 # config.bind('gK', 'tab-move -')
 # config.bind('gm', 'tab-move')
 config.bind("xv", "spawn --userscript camille-vaultwarden")
+config.bind(",sl",'config-cycle content.user_stylesheets ~/.config/qutebrowser/solarized-everything-css/css/solarized-light/solarized-light-all-sites.css ""',)
+config.bind(",dr",'config-cycle content.user_stylesheets ~/.config/qutebrowser/solarized-everything-css/css/darculized/darculized-all-sites.css ""',)
 
 # dark mode setup
 c.colors.webpage.darkmode.enabled = True
-c.colors.webpage.darkmode.algorithm = "lightness-cielab"
-c.colors.webpage.darkmode.policy.images = "never"
+# c.colors.webpage.darkmode.algorithm = "lightness-cielab"
+# c.colors.webpage.darkmode.policy.images = "never"
 # config.set("*colors.webpage.darkmode.enabled", False, "file://*")
 
 # styles, cosmetics

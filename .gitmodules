@@ -1,3 +1,6 @@
 [submodule "waybar/.config/waybar/wesh"]
 	path = waybar/.config/waybar/wesh
 	url = git@github.com:camillevuillaume/wesh.git
+[submodule "qutebrowser/.config/qutebrowser/solarized-everything-css"]
+	path = qutebrowser/.config/qutebrowser/solarized-everything-css
+	url = git@github.com:alphapapa/solarized-everything-css.git

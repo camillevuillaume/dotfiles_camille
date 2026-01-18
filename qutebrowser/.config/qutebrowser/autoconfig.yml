@@ -12,3 +12,5 @@ settings:
     global: '#555555'
   colors.tabs.odd.bg:
     global: grey
+  content.user_stylesheets:
+    global: null
