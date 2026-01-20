@@ -12,5 +12,7 @@ settings:
     global: '#555555'
   colors.tabs.odd.bg:
     global: grey
+  colors.webpage.darkmode.enabled:
+    global: true
   content.user_stylesheets:
     global: null
