@@ -5,4 +5,6 @@ libbdplus
 bluraybackup
 ltex-ls-bin
 calibre-plugin-dedrm
+asix-ax88179-dkms
+python-meshtastic
 

@@ -118,4 +118,7 @@ shellharden
 rust
 uv
 python-lsp-server
+screen
+minicom
+esphome
 
