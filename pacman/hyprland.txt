@@ -73,4 +73,6 @@ qutebrowser
 rofi
 openrgb
 calibre
+x265
+chromium
 
