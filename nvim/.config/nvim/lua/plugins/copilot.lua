@@ -4,7 +4,7 @@ return {
 		-- enable = false,
 		init = function()
 			vim.g.llama_config = {
-				endpoint = "http://192.168.3.190:11436/infill",
+				endpoint = "http://192.168.2.27:11434/infill",
 				-- endpoint = "http://192.168.3.190:11434/infill",
 				-- Local Context (Line based)
 				n_prefix = 64, -- ~640 tokens
@@ -43,7 +43,7 @@ return {
 						["llama.cpp"] = function()
 							return require("codecompanion.adapters").extend("openai_compatible", {
 								env = {
-									url = "http://192.168.3.190:11434", -- replace with your llama.cpp instance
+									url = "http://192.168.2.27:11434", -- replace with your llama.cpp instance
 									api_key = "TERM",
 									chat_url = "/v1/chat/completions",
 								},

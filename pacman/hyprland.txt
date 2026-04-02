@@ -75,4 +75,5 @@ openrgb
 calibre
 x265
 chromium
+simple-scan
 

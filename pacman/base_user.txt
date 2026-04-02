@@ -121,4 +121,11 @@ python-lsp-server
 screen
 minicom
 esphome
+sane
+sane-airscan
+ipp-usb
+gtest
+docker-compose
+docker
+docker-buildx
 
