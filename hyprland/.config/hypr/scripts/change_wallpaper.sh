@@ -2,7 +2,7 @@
 
 # Quit if hyprpaper is not running.
 if pgrep -x niri > /dev/null; then
-  if ! pgrep swww-daemon > /dev/null; then
+  if ! pgrep awww-daemon > /dev/null; then
     exit 0
   fi  
 else
@@ -48,7 +48,7 @@ fi
 
 # Apply the wallpaper to current display.
 if pgrep -x niri > /dev/null; then
-  swww img "$WALLPAPER" 
+  awww img "$WALLPAPER" 
 else
   if ! pgrep -x hyprpaper > /dev/null; then
     exit 0
