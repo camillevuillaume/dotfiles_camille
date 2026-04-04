@@ -1,4 +1,3 @@
 #!/bin/bash
 
-cat ~/.config/niri/custom-$HOSTNAME.kdl ~/.config/niri/base.kdl > ~/.config/niri/config.kdl
-
+ln -s  ~/.config/niri/custom-$HOSTNAME.kdl ~/.config/niri/config_local.kdl 
