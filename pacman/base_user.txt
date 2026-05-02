@@ -128,4 +128,12 @@ gtest
 docker-compose
 docker
 docker-buildx
+cmake
+tree-sitter
+tree-sitter-cli
+tree-sitter-python
+tree-sitter-bash
+tree-sitter-lua
+tree-sitter-c
+tree-sitter-javascript
 
