@@ -1,23 +1,23 @@
 return {
-	{
-		"ggml-org/llama.vim",
-		-- enable = false,
-		init = function()
-			vim.g.llama_config = {
-				endpoint = "http://192.168.3.46:11434/infill",
-				-- endpoint = "http://192.168.3.190:11434/infill",
-				-- Local Context (Line based)
-				n_prefix = 64, -- ~640 tokens
-				n_suffix = 32, -- ~320 tokens
-				n_predict = 128, -- Space for the AI's answer
+	-- {
+	-- 	"ggml-org/llama.vim",
+	-- 	-- enable = false,
+	-- 	init = function()
+	-- 		vim.g.llama_config = {
+	-- 			endpoint = "http://192.168.3.46:11434/infill",
+	-- 			-- endpoint = "http://192.168.3.190:11434/infill",
+	-- 			-- Local Context (Line based)
+	-- 			n_prefix = 64, -- ~640 tokens
+	-- 			n_suffix = 32, -- ~320 tokens
+	-- 			n_predict = 128, -- Space for the AI's answer
 
-				-- Ring Buffer (Global context from other files)
-				-- Default is usually 8 chunks; we reduce it to keep the current file prioritized
-				ring_n_chunks = 4,
-				ring_chunk_size = 16, -- Smaller chunks to save space
-			}
-		end,
-	},
+	-- 			-- Ring Buffer (Global context from other files)
+	-- 			-- Default is usually 8 chunks; we reduce it to keep the current file prioritized
+	-- 			ring_n_chunks = 4,
+	-- 			ring_chunk_size = 16, -- Smaller chunks to save space
+	-- 		}
+	-- 	end,
+	-- },
 	-- {
 	--   "github/copilot.vim",
 	--   -- enable = false,
