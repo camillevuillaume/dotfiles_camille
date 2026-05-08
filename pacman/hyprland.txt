@@ -76,4 +76,5 @@ calibre
 x265
 chromium
 simple-scan
+wireshark-qt
 
