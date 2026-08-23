@@ -40,7 +40,6 @@ ueberzugpp
 bluez
 bluez-utils
 bc
-ollama
 pipewire-pulse
 fuse3
 brightnessctl
