@@ -5,6 +5,7 @@ export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 export HOSTNAME=$HOST
 export PATH="/home/camille/.local/bin:$PATH"
+export PATH="/home/camille/go/bin:$PATH"
 
 autoload -Uz compinit
 compinit

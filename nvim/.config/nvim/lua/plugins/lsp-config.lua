@@ -9,7 +9,7 @@ return {
 		"mason-org/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "pylsp", "clangd", "ts_ls", "bashls" },
+				ensure_installed = { "lua_ls", "pylsp", "clangd", "ts_ls", "bashls", "gopls" },
 			})
 		end,
 	},
@@ -48,6 +48,18 @@ return {
 					},
 				},
 			})
+
+      vim.lsp.config("gopls", {
+        settings = {
+          gopls = {
+            analyses = {
+              unusedparams = true,
+            },
+            staticcheck = true,
+            gofumpt = true, -- Enable gofumpt formatting directly in gopls
+          },
+        },
+      })
 			-- vim.lsp.config("ltex", {})
 
 			-- 3. Enable them (pass a string or a list of strings)
