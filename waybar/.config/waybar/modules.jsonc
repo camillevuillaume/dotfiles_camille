@@ -27,7 +27,7 @@
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "<span size='13000' foreground='#7aa2f7'>󰤮 </span>",
     "tooltip-format-wifi": "{essid} Signal Strength: {signalStrength}%",
-    "on-click": "kitty --title FloatingKitty impala"
+    "on-click": "kitty --class FloatingKitty impala"
   },
   //"network": {
   //  "format-wifi": "<span size='13000' foreground='#7aa2f7'>  </span>",
@@ -35,7 +35,7 @@
   //  "format-linked": "{ifname} (No IP) ",
   //  "format-disconnected": "<span size='13000' foreground='#7aa2f7'>  </span>Disconnected",
   //  "tooltip-format-wifi": "{essid} Signal Strenght: {signalStrength}%",
-  //  "on-click": "kitty --title FloatingKitty impala"
+  //  "on-click": "kitty --class FloatingKitty impala"
   //},
   "pulseaudio": {
       "format": "{icon}  {volume}%",
@@ -43,7 +43,7 @@
       "format-icons": {
           "default": ["", "", " "]
       },
-      "on-click": "kitty --title FloatingKitty wiremix"
+      "on-click": "kitty --class FloatingKitty wiremix"
   },
   "hyprland/workspaces": {
 		"format": "{name} : {icon}",
@@ -89,7 +89,7 @@
     "exec": "~/.config/waybar/wesh/weather_bar.sh",
     "return-type": "json",
     "interval": 3600,
-    "on-click": "kitty --title FloatingWesh -o remember_window_size=no -o initial_window_width=49c -o initial_window_height=36c ~/.config/waybar/wesh/weather_today.sh"
+    "on-click": "kitty --class FloatingWesh -o remember_window_size=no -o initial_window_width=49c -o initial_window_height=36c ~/.config/waybar/wesh/weather_today.sh"
   },
   "bluetooth": {
 	  "format": " {status}",
@@ -100,8 +100,8 @@
 	  "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
 	  "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
 	  "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
-    //"on-click": "kitty --title FloatingKitty bluetoothctl"
-    "on-click": "kitty --title FloatingKitty bluetui"
+    //"on-click": "kitty --class FloatingKitty bluetoothctl"
+    "on-click": "kitty --class FloatingKitty bluetui"
   },
   "niri/workspaces": {
     "disable-click": true,

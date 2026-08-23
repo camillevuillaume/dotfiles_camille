@@ -345,13 +345,15 @@ window-rule {
 }
 
 window-rule {
-    match title="FloatingKitty"
+    match app-id="FloatingKitty"
     open-floating true
+    open-maximized true
 }
 
 window-rule {
-    match title="FloatingWesh"
+    match app-id="FloatingWesh"
     open-floating true
+    default-column-width {}
 }
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
