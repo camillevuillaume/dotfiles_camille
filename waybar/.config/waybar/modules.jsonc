@@ -19,13 +19,24 @@
     "tooltip-format": "{time}"
   },
   "network": {
-    "format-wifi": "<span size='13000' foreground='#7aa2f7'>  </span>",
-    "format-ethernet": "<span size='13000' foreground='#7aa2f7'>󰤭  </span> Disconnected",
+    // Array of icons from weakest (0%) to strongest (100%)
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    // Use {icon} inside your format string
+    "format-wifi": "<span size='13000' foreground='#7aa2f7'>{icon}</span>",
+    "format-ethernet": "<span size='13000' foreground='#7aa2f7'>󰈀 </span>",
     "format-linked": "{ifname} (No IP) ",
-    "format-disconnected": "<span size='13000' foreground='#7aa2f7'>  </span>Disconnected",
-    "tooltip-format-wifi": "{essid} Signal Strenght: {signalStrength}%",
+    "format-disconnected": "<span size='13000' foreground='#7aa2f7'>󰤮 </span>",
+    "tooltip-format-wifi": "{essid} Signal Strength: {signalStrength}%",
     "on-click": "kitty --title FloatingKitty impala"
   },
+  //"network": {
+  //  "format-wifi": "<span size='13000' foreground='#7aa2f7'>  </span>",
+  //  "format-ethernet": "<span size='13000' foreground='#7aa2f7'>󰤭  </span> Disconnected",
+  //  "format-linked": "{ifname} (No IP) ",
+  //  "format-disconnected": "<span size='13000' foreground='#7aa2f7'>  </span>Disconnected",
+  //  "tooltip-format-wifi": "{essid} Signal Strenght: {signalStrength}%",
+  //  "on-click": "kitty --title FloatingKitty impala"
+  //},
   "pulseaudio": {
       "format": "{icon}  {volume}%",
       "format-muted": "",
@@ -78,7 +89,7 @@
     "exec": "~/.config/waybar/wesh/weather_bar.sh",
     "return-type": "json",
     "interval": 3600,
-    "on-click": "kitty --title FloatingKitty -o remember_window_size=no -o initial_window_width=49c -o initial_window_height=36c ~/.config/waybar/wesh/weather_today.sh"
+    "on-click": "kitty --title FloatingWesh -o remember_window_size=no -o initial_window_width=49c -o initial_window_height=36c ~/.config/waybar/wesh/weather_today.sh"
   },
   "bluetooth": {
 	  "format": " {status}",
