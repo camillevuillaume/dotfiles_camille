@@ -135,4 +135,4 @@ tree-sitter-bash
 tree-sitter-lua
 tree-sitter-c
 tree-sitter-javascript
-
+aerc
