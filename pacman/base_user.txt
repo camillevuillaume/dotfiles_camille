@@ -136,3 +136,4 @@ tree-sitter-lua
 tree-sitter-c
 tree-sitter-javascript
 aerc
+rbw
