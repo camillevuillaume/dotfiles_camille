@@ -1,6 +1,6 @@
-
 7zip
 acpi
+aerc
 asciidoctor-pdf
 base-devel
 bash-completion
@@ -76,6 +76,7 @@ python-setuptools
 python-tldextract
 qemu-img
 qemu-system-x86
+rbw
 reflector
 ripgrep
 rpi-imager
