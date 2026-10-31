@@ -2,6 +2,7 @@
 acpi
 aerc
 asciidoctor-pdf
+aws-cli
 base-devel
 bash-completion
 bash-language-server
@@ -76,13 +77,10 @@ python-requests
 python-scipy
 python-setuptools
 python-tldextract
-qemu-img
-qemu-system-x86
 rbw
 realtime-privileges
 reflector
 ripgrep
-rpi-imager
 rsync
 rust
 sane
@@ -125,9 +123,6 @@ ueberzugpp
 unzip
 usbutils
 uv
-vscode-css-languageserver
-vscode-html-languageserver
-vscode-json-languageserver
 wikiman
 wireplumber
 zoxide

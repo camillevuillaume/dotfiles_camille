@@ -1,0 +1,15 @@
+kicad
+obs-studio
+openrgb
+qemu-img
+qemu-system-x86
+qmk
+rpi-imager
+thunar
+thunar-archive-plugin
+thunar-media-tags-plugin
+thunar-volman
+tigervnc
+vscode-css-languageserver
+vscode-html-languageserver
+vscode-json-languageserver

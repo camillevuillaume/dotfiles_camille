@@ -34,8 +34,6 @@ noto-fonts-cjk
 noto-fonts-emoji
 noto-fonts-extra
 obsidian
-obs-studio
-openrgb
 otf-font-awesome
 pavucontrol
 prusa-slicer
@@ -48,11 +46,6 @@ starship
 swayidle
 swaync
 swww
-thunar
-thunar-archive-plugin
-thunar-media-tags-plugin
-thunar-volman
-tigervnc
 ttf-cascadia-code-nerd
 ttf-firacode-nerd
 ttf-noto-nerd
@@ -81,4 +74,3 @@ yazi
 zathura
 zathura-pdf-mupdf
 zathura-ps
-kicad
