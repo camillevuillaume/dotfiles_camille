@@ -38,7 +38,6 @@ obs-studio
 openrgb
 otf-font-awesome
 pavucontrol
-pipewire-pulse
 prusa-slicer
 qt6-base
 qt6-wayland
@@ -82,3 +81,4 @@ yazi
 zathura
 zathura-pdf-mupdf
 zathura-ps
+kicad

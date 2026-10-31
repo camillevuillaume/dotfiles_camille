@@ -18,6 +18,7 @@ chrony
 clang
 cmake
 cmatrix
+cpupower
 docker
 docker-buildx
 docker-compose
@@ -51,6 +52,7 @@ nvim
 openssh
 pdftk
 pipewire
+pipewire-alsa
 pipewire-jack
 pipewire-pulse
 plymouth
@@ -77,6 +79,7 @@ python-tldextract
 qemu-img
 qemu-system-x86
 rbw
+realtime-privileges
 reflector
 ripgrep
 rpi-imager
@@ -126,6 +129,7 @@ vscode-css-languageserver
 vscode-html-languageserver
 vscode-json-languageserver
 wikiman
+wireplumber
 zoxide
 zsh
 zsh-completions
